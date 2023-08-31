@@ -1,0 +1,39 @@
+:root {
+    --border-radius: .5em;
+    --primary-color: #96C291;
+    --secondary-color: #FFB7B7;
+    --background-color: #F4EEEE;
+}
+
+.cat-figure {
+    display: inline-block; 
+    margin: 2em;
+    padding-bottom: 1em;
+    width: 30%;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    transition: 800ms;
+}
+
+.cat-figure:hover {
+    background-color: var(--primary-color);
+    box-shadow: .5em 1em 1em;
+}
+
+.cat-figure img {
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.cat-figure figcaption {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.cat-figure-container {
+    border-width: .1em;
+    border-color: rgb(161, 161, 161);
+    border-style: solid;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color)
+}
