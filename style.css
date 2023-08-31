@@ -2,11 +2,20 @@
     --border-radius: .5em;
     --primary-color: #96C291;
     --secondary-color: #FFB7B7;
-    --background-color: #F4EEEE;
+    --background-color: #f4eeee7a;
+    font-family: 'Lora', serif;
+    --box-cardshadow: .5em 1em 1em;
+}
+
+body {
+    background-image: url("images/pexels-eberhard-grossgasteiger-1287145.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cat-figure {
-    display: inline-block; 
+    display: inline-block;
     margin: 2em;
     padding-bottom: 1em;
     width: 30%;
@@ -17,7 +26,8 @@
 
 .cat-figure:hover {
     background-color: var(--primary-color);
-    box-shadow: .5em 1em 1em;
+    box-shadow: var(--box-cardshadow);
+    transform: scale(1.1);
 }
 
 .cat-figure img {
@@ -30,10 +40,32 @@
     margin-left: .5em;
     margin-right: .5em;
 }
+
 .cat-figure-container {
     border-width: .1em;
     border-color: rgb(161, 161, 161);
     border-style: solid;
     border-radius: var(--border-radius);
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+}
+
+.cat-figure-container a:nth-child(odd) .cat-figure {
+    background-color: rgb(238, 76, 76);
+    color: white;
+    font-weight: bolder;
+    box-shadow: var(--box-cardshadow);
+}
+
+.Navi {
+    color: white;
+    background-color: #96C291;
+    border-radius: .5em;
+    padding: .5em;
+    margin: 1em;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: .1em .2em white;
 }
